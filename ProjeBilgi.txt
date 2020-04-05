@@ -1,0 +1,1 @@
+Proje 2günlük süreçte yapýldý. Anasayfa, özgeçmiþ, iletiþim, giriþ kýsýmlarýndan oluþuyor genel anlamda. Giriþ ve iletiþim kýsmý php gerisi html içeriyor.
