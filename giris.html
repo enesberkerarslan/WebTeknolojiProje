@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content=" Enes Berk Erarslan">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum*scale=1"> <!-- Tarayıcının sayfayı responsive olarak algılamasını saglar-->
+    <title>Enes Berk Erarslan</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">   
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+
+  </head>
+  <body>
+  </head>
+  <body>
+      <header> <!-- Menü-->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="ozgecmis.html">ÖZGECMİŞ</a></li>
+                    <li><a href="sehrim.html">ŞEHRİM</a></li>
+                    <li><a href="mirasimiz.html">MİRAS</a></li>
+                    <li><a href="iletisim.html">İLETİŞİM</a></li>
+                    <li><a href="giris.html">GİRİŞ</a></li>
+                </ul>
+            </div>
+        </div>
+      </header>
+
+      <section id = "giris" class = "sectionArea">
+            <div class = "container">
+                <!--
+
+                    <form action="giriskontrol.php" class="form">
+                            <div class = "formItem">
+                                 <input id="eposta" class="formText" type="email" placeholder="Email adresi" required>
+                            </div>
+
+                            <div class = "formItem">
+                                <div class = "formItem">
+                                    <input id="sifre" class="formText" type="password" placeholder="Şifre" required>
+                               </div>
+                            </div>
+
+                            <div class="formItem">
+                                <input class="btnForm" type="submit" name = "gonder" value="gonder" onclick="girisKontrol()">
+                            </div>
+
+                    </form>
+
+                -->
+                
+                <div id="form_kutusu" />
+                    <form action="giriskontrol.php" method="POST">
+                            <p>eposta</p><input id="eposta" type="text" name="eposta" required/><br />
+                            <p>sifre</p><input type="password" name="sifre" required/>
+                            <p><input type="submit" name="gonder" value="gonder"/></p>
+                    </form>
+                </div>
+
+              
+                </script>
+
+            </div>
+
+      </section>
+
+     
+
+
+<!--
+
+      <section id="iletişim" class="sectionArea">
+        <div class="iletisimTop">
+          <h2 class="sectionHeader">İletisim</h2>
+          <div class="iletisimBody">
+            <div class="container">
+              <div class="iletisimForm">
+                <form action="php.php" class="form">
+                  <div class="formItem">
+                    <span class="formIcon"><i class="fa fa-user fa-2x"></i></span>
+                    <input id="ad" class="formText" type="text" placeholder="Ad Soyad" required>
+                  </div>
+                  <div class="formItem">
+                      <span class="formIcon"><i class="fa fa-envelope fa-2x"></i></span>
+                      <input id="email" class="formText" type="email" placeholder="Email adresiniz" required>
+                  </div>
+                  <div class="formItem">
+                        <span class="formIcon"><i class="fas fa-venus-mars fa-2x"></i></span>
+                        <input class="formRadio" name="cinsiyet" type="radio" required><p>Erkek</p>
+                        <input class="formRadio" name="cinsiyet" type="radio" required><p>Kadın</p>
+                  </div>
+                  <div class="formItem">
+                      <span class="formIcon"><i class="fa fa-comment fa-2x"></i></span>
+                      <textarea id="mesaj" class="formText" rows="8" placeholder="Görüşleriniz..."></textarea>
+                  </div>
+                  <div class="formItem">
+                      <input class="btnForm" type="submit" value="Gönder" onclick="kontrol()">
+                      <input class="btnForm" type="reset" value="Reset" >
+                  </div>
+
+                </form>
+                <script type="text/javascript">
+                  let sayac=0;
+                  let addeger=document.getElementById('ad').value;            
+                  let emaildeger=document.getElementById('email').value;
+                  function kontrol(){
+                    if(addeger==null|| addeger==""){
+                      alert("Ad Boş Bırakılamaz");
+                    }
+                    if(emaildeger==null){
+                      alert("email boş bırakmayınız");
+                    }
+                    for(var i=0;i<emaildeger.length;i++){
+                      if(emaildeger[i]=='@'){
+                        sayac++;
+                        break;
+                      }
+                    }
+                    if(sayac==0){
+                      alert('Geçerli bir Email girin');
+                    }
+                  }
+
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      */
+    
+-->
+        <section>
+  
+          
+            
+        </section>
+
+      
+
+
+
+
+      
+
+
+        <footer class="sectionArea">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footerItem">
+                  <h3>SİTEME HOŞ GELDİNİZ</h3>
+                  <a href="index.html"><img src="img/logo.png"></a>
+                  <p>Benim hakkımda 1. ağızdan duyabileceğiniz en doğrubilgiler.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="footerItem">
+                    <h3>SOSYAL MEDYA HESAPLARIM</h3>
+                    <ul class="socialLinks">
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook" ></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+  
+  
+              
+            </div>
+          </div>
+        
+  
+        </footer>
+    
+
+  </body>
+</html>

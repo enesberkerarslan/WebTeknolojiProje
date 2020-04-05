@@ -1,0 +1,585 @@
+
+
+/* Menu*/
+@font-face{
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Regular.ttf');
+}
+
+
+
+header .logo{
+    margin-right: auto;
+}
+
+
+header .logo img {
+    display: block;
+    height: 70px;
+}
+
+.menu li{
+    float: left;
+    
+}
+
+.menu li a{
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none; 
+    letter-spacing: 2px;
+    color: #333;
+    transition: all .5s ease;
+}
+
+/*FOOTER*/
+
+footer{
+    background: #500d16;
+    text-align: center;
+}
+
+.footerItem {
+    padding-left: 10%;
+    
+}
+.footerItem img {
+    height: 75px;
+    opacity: .8;
+}
+
+footer h3{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.socialLinks i{
+    font-size: 30px;
+    line-height: 50px;
+    transition: .3s ease;
+}
+.socialLinks .item:hover{
+    color: white;
+}
+
+footer p{
+    color:#a0a6a7;
+    line-height: 20px;
+}
+
+.menu li:hover a{
+    background: #500d16;
+    color:white;
+}
+
+/*ortak kullanılanlar*/
+
+body{
+    background: white;
+    color: #3f3f3f;
+    font: 14px/28px arial;
+    font-family: 'Raleway';
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+}
+#display{
+    display: block;
+}
+
+.sectionArea{
+    padding: 80px 0;
+
+}
+
+
+.sectionHeader{
+    background: #550d16;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color:white;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 0px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/*Text baslıkları*/
+
+h1{
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 20px;
+    color: #500d16;
+    transition: all .5s ease;
+   
+}
+
+
+/*anasayfa*/
+
+
+#anaFoto{
+    height: 500px;
+    background: url('../img/anafoto.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.foto {
+    width: 100%;
+}
+
+#anaBaslık{
+    height: 500px;
+
+    
+}
+
+.baslık{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.featuresBody .container , .hobiBody .container{
+    justify-content: space-between;
+}
+
+.featuresTop{
+    text-align: center;
+}
+
+
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto; 
+    transition:  all .5s ease;   
+}
+
+.item .itemText {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #500d16;
+
+}
+.item:hover .zoom img {
+    transform: scale(1.25);
+
+}
+
+.item:hover h3{
+    color: white;
+}
+.item:hover .itemText{
+    background: #500d16;
+    color: white;
+    transition: all .5s ease;
+}
+
+.btnDetails{
+    color: #500d16;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #500d16;
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails{
+    color: white;
+    border: 1px solid white;
+}
+
+.itemText p {
+    margin: 20px 0;
+}
+
+#parallax{
+    background: linear-gradient(
+                rgba(0,0,0,.7),
+                rgba(0,0,0,.7)
+                ),
+                url('../img/anafoto.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+}
+
+#parallax p {
+    color: white;
+}
+
+.hobiTop{
+    text-align: center;
+}
+.hobiTop p{
+    font-size: 17px;
+}
+
+.hobiContainer{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hobiOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.hobiContainer:hover .hobiOverlay{
+    width: 100%
+}
+
+.hobiText{
+    white-space: nowrap; /* ilk acılışta textin alt alta yazımını engeller*/
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*textin ortalamak için*/
+    text-decoration: none;
+    font-size: bold;
+}
+
+.hobiOverlay2{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.hobiContainer:hover .hobiOverlay2{
+    width: 100%;
+    left: 0;    
+}
+
+
+/*MIRASIMIZ*/
+
+#mirasimiz{
+    background-color: #f5f5f5;
+}
+
+.mirasimizTop{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mihrasimizBody .col-md-6{
+    display: flex;
+    margin: 20px 0px;
+    padding: 0 0;
+
+}
+
+.mihrasimizImg{
+    width: 40%;
+    
+}
+
+.mihrasimizImg img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.mirasimizText{
+    width: 60%;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+h4{
+    color:#500d16;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.mirasimizText a{
+    float: right;
+    text-decoration: none;
+    color: #500d16;
+}
+.mirasimizText a:hover {
+    text-decoration: underline;
+}
+
+.mirasimizText p {
+    padding:2px;
+}
+
+.mirasimizTop p {
+    font-size: 20px;
+}
+
+
+/*SEHRİM*/
+
+
+
+#sehrimFoto{
+    height: 250px;
+    background: url('../img/sehrim.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+
+#sehrimBaslık{
+    height: 250px;
+    background: rgba(0, 0, 0, .4);
+    
+}
+
+#sehrim{
+    background-color: #f5f5f5;
+}
+
+.sehrimTop {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sliderFoto{
+    width: 400%;
+    position: relative;
+    left: 0;
+    animation: slideAnimation 15s infinite;
+}
+.sliderFoto img{
+    width: 25%;
+    float: left;
+    height: auto;
+}
+
+@keyframes slideAnimation {
+    0% { left:0}
+    25% { left:-100%}
+    50% { left:-200%}
+    75% { left:-300%}
+    100% { left:0}
+}
+
+.sehrimTextBody{
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.sehrimTextBody .row {
+    margin: 40px 0px;
+    
+    
+}
+
+#border{
+    padding: 40px 0;
+    border-top:2px solid #5d5d5d;
+    border-bottom:2px solid #5d5d5d;
+}
+.sehrimTextBody img{ 
+    border-radius: 8px;
+    width: 100%;
+    
+}
+
+.sehrimTextBody h3{
+    margin: 20px 0;
+}
+
+
+
+
+
+
+/* iletisim*/
+
+#iletisimFoto{
+    height: 500px;
+    background: url('../img/iletisim.jpg') center center no-repeat;
+    background-size: 50%;
+}
+
+
+
+.iletisimTop{
+    text-align: center;
+}
+
+.iletisimForm{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form{
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.formItem{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formIcon{
+    color: white;
+    float: left;
+    background: #500d16;
+    padding: 5px;
+    width: 10%;
+    text-align: center;
+}
+
+.formText{
+    color: white;
+    background: #500d16;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+}
+.formRadio{
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+    
+    
+}
+
+.formItem p {
+    text-align: left;
+    margin-left: 100px;
+    color: #500d16;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ozgecmis*/
+
+
+#ozgecmisFoto{
+    height: 300px;
+    background: url('../img/ozgecmis.jpg') center center no-repeat;
+    background-size: 1900px 300px;
+}
+
+
+
+#ozgecmisBaslık{
+    height: 300px;
+    background: rgba(0, 0, 0, .4);
+    
+}
+
+.ozgecmisTop {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.ozgecmisTextBody{
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.ozgecmisTextBody .row {
+    margin: 20px 0px;
+    
+    
+}
+
+#ozgecmisBorder{
+    padding: 40px 0;
+    border-bottom:2px solid #5d5d5d;
+}
+.ozgecmisTextBody img{ 
+    border-radius: 8px;
+    width: 100%;
+    
+}
+
+.ozgecmisTextBody p{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.ozgecmisTextBody h3{
+    margin-bottom: 5px 0;
+    font-size: 35px;;
+    float: left;
+}
+.ozgecmisTextBody h4{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
